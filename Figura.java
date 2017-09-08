@@ -12,7 +12,7 @@ public class Figura
   {
       area = 0;
     }
-    public void calculaArea()
+    public void calcularArea()
   {
       System.out.println("nose como");
     }

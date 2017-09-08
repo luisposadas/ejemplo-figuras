@@ -15,8 +15,9 @@ public class Circulo extends Figura
         radio= unRadio;
         
     }
+    @Override
     
-    public void clculaArea()
+    public void calcularArea()
     {
         area = 3.14f * radio * radio;
         
