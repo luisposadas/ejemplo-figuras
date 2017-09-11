@@ -7,17 +7,33 @@
  */
 public class Figura
 {
-  protected float area;
-  public Figura()
-  {
-      area = 0;
+   
+    protected float area;
+    protected float perimetro;
+    
+    
+    public Figura()
+    {
+        area = 0;
+        perimetro = 0;
     }
+    
+    
+    
     public void calcularArea()
-  {
-      System.out.println("nose como");
+    {
+         System.out.println("No se ");
     }
-     public void imprimirArea()
-  {
-      System.out.println("el area es" + area);
+    
+    public void imprimirArea()
+    {
+        System.out.println("El area de la figura es:" + area);
     }
+    
+    public void calculaPerimetro()
+    {
+        System.out.println("El perimetro de la figura es:" + perimetro);
+    }
+
 }
+
