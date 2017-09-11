@@ -1,42 +1,33 @@
-
+/**
+ * esta clase reprecenta objetos triangulo con un radio
+ * @author Luis Posadas
+ * @version 1.0(8-sep-17)
+ */
 public class triangulo extends Figura
 {
     private float base;
     private float altura;
-    private float lado1;
-    private float lado2;
+    private float ladoD;//derecho
+    private float ladoI;
     
-    public triangulo(float iniBase, float iniAltura,float iniLado1,float iniLado2)
+    public triangulo(float usrBase, float usrAltura,float usrLadoD,float usrLadoI)
     {
-        base = iniBase;
-        altura = iniAltura;
-        lado1 = iniLado1;
-        lado2 = iniLado2;
+        base =  usrBase;
+        altura = usrAltura;
+        ladoD =  usrLadoD;
+        ladoI =  usrLadoI;
     }
     
-    @Override
+ 
     public void calcularArea()
     {
-        area = (base * altura);
-        area = area/2;
+        area = (base * altura)/2;
+        
     }
     
-    @Override
+    
     public void calculaPerimetro()
     {
-        if ( base == altura )
-        {
-          perimetro = 3 * base;  
-        }
-        else
-            if(base != lado1 && lado1 == lado2)
-            {
-                perimetro = 2 * base * lado1;
-            }
-            else
-                if(base != lado1 && lado1 != lado2)
-                {
-                    perimetro = base + lado1 + lado2;
-                }
+        perimetro = base + ladoD +ladoI;
     }
 }
